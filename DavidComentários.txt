@@ -1,0 +1,28 @@
+ENTIDADE
+Essa classe são definidos campos para guardar informações. O campo "id" é marcado com as anotações @Id e @GeneratedValue, indicando que ele é a chave primária da entidade e que seu valor será gerado automaticamente pelo banco de dados. Além disso, a classe é anotada com @Entity, indicando que ela é uma entidade JPA, e @Table(name="aluno"), especificando o nome da tabela.
+
+REPOSITORY
+A interface repository serve para importar e armazenar as funcionalidades do JPA que serão usadas em outras camadas.
+
+SERVICE
+Na classe service, primeiro é importado as funcionalidades e os pacotes. É usado a anotação @Service que indica que a classe é um serviço. Depois é declarado as funcionalidades do JPA como GET, DELETE, PUT E POST.
+
+CONTROLLER
+Essa camada serve para aplicar as funcionalidades e manipular a partir delas, as informações.
+O @RequestMapping define o mapeamento das requisições HTTP
+@Autowired serve para injeção de dependencias
+Depois vem os metodos escritos que irão manipular as informações (GET,POST, PUT e DELETE)
+
+DTO
+Essa camada define os campos do registro da entidade e facilita as conexões entre as camadas
+
+Application properties
+Serve para conectar o código em um banco de dados, seja ele MYSQL ou H2 CONSOLE
+
+
+
+
+
+
+
+
